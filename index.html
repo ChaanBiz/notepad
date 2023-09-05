@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="add">
+        <div class="addBtn">
+          <button id="add">
+            +
+          </button>
+        </div>
+        <div class="pop-box">
+          <div class="sample">
+            <div class="cancel">x</div>
+            <div class="content">
+              <textarea name="note" id="note" placeholder="Type..."></textarea>
+              <button id="save">
+                save
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <div class="confirmation">
+          <p>Are you sure you want to delete this?</p>
+          <div class="btns">
+            <div class="yes">
+              <button class="btnY">Yes</button>
+            </div>
+            <div class="no">
+              <button class="btnN">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

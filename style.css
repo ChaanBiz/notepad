@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:ital,wght@0,400;1,300&family=Poppins&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+body {
+  background-image: linear-gradient(90deg, #bbaaf8, #fae9e9);
+}
+
+.container {
+  padding: 20px 50px;
+}
+
+.container .add {
+  margin: 20px;
+  padding-left: 60px;
+  display: flex;
+}
+
+.container .add button {
+  background-color: rgba(255, 255, 255, .4);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.cancel {
+  text-align: end;
+  padding: 5px 20px;
+  color: rgba(0, 0, 0, .5);
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sample, #box {
+  width: 300px;
+  height: 250px;
+  background-color: rgba(238, 209, 245, 0.2);
+  box-shadow: 0 0 20px rgba(187, 170, 248, .7);
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+#box {
+  margin: 20px;
+  overflow: hidden;
+}
+
+.sample .content {
+  padding: 0 20px 20px;
+}
+
+.pop-box {
+  display: none;
+  transition: ease .4s;
+  padding-left: 30px;
+}
+
+.pop-box.show {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: rgba(168, 90, 233, 0.356) 2px solid;
+  border-radius: 5px;
+  box-shadow: inset 0 -15px 20px -15px rgba(187, 170, 248, .7);
+  outline: none; 
+  resize: none;
+  height: 16vh;
+  font-size: 16px;
+  color: rgb(105, 43, 156);
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+textarea::-webkit-scrollbar{
+  width: 0;
+}
+
+textarea:hover::-webkit-scrollbar{
+  width: 5px;
+}
+
+textarea:hover::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+textarea:hover::-webkit-scrollbar-thumb{
+  background: #e6e6e6;
+  border-radius: 25px;
+}
+
+#save, #edit, .btnN {
+  border: 2px rgba(73, 30, 102, .7) solid;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(105, 43, 156);
+  padding: 2px 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: ease-in .2s;
+  cursor: pointer;
+}
+
+#save:hover, #edit:hover, .btnN:hover {
+  padding: 2px 15px;
+}
+
+#box {
+  color: rgb(105, 43, 156);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#bottom {
+  color: rgba(73, 30, 102, .7);
+}
+
+#options {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#delete {
+  cursor: pointer;
+}
+
+#delete:hover {
+  color: red;
+  transition: ease-in .2s;
+}
+
+#date {
+  font-size: 15px;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(80deg,rgba(190, 176, 241, .5), rgba(255, 255, 255, .5));
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 20px rgba(187, 170, 248, .7);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10em;
+  display: none;
+}
+
+.confirmation p {
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  padding: 20px 20px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns button {
+  margin: 0 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btnY {
+  color: red;
+  border: none;
+}
